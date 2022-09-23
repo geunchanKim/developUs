@@ -52,7 +52,7 @@
 .section1 .green-box{
     /* 회원가입 박스 */
     position: absolute;
-    width: 87px;
+    width: 110px;
     height: 34px;
     left: 1303px;
     top: 23px;
@@ -64,9 +64,28 @@
 .green-box .sign-up{
     /* 회원가입 */
     position: relative;
-    left: 7px;
+    left: 17px;
     top: 3px;
     width: 67px;
+    height: 25px;
+    /* left: 1313px; */
+    /* top: 28px; */
+    
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: white;
+}
+
+.green-box .mypage{
+    /* 회원가입 */
+    position: relative;
+    left: 10px;
+    top: 3px;
+    width: 100px;
     height: 25px;
     /* left: 1313px; */
     /* top: 28px; */
