@@ -67,12 +67,13 @@ public class Waruru {
 
     }
     
-    private int card(){
+    private int card() throws IOException{
         Card card = new Card(getusrid());
         Scanner sc = new Scanner(System.in);
         System.out.println("카드정보를 확인하세요");
         if(card.checkCard(card)){
             System.out.println("카드정보 확인됨.");
+            sc.close();
             return 0;
         }
         else{
@@ -85,9 +86,9 @@ public class Waruru {
             String due = sc.next();
             card.setdue(due);
             System.out.println("생년월일을 입력하세요. YY MM DD");
-            int yy = sc.nextInt();
-            int mm = sc.nextInt();
-            int dd = sc.nextInt();
+            String yy = sc.next();
+            String mm = sc.next();
+            String dd = sc.next();
             card.setbirth(yy, mm, dd);
             System.out.println("CVC, 보안코드 앞 두자리를 입력하세요.");
             String cvc = sc.next();
@@ -97,8 +98,13 @@ public class Waruru {
             card.saveCard(card);
             System.out.println("카드정보가 저장되었습니다.");
             System.out.println("카드정보 확인됨.");
+            sc.close();
             return 0;
         }
+    }
+
+    public void cash(){
+        System.out.println("HIIII");
     }
 
     public static void main(String args[]) throws IOException{
@@ -106,6 +112,9 @@ public class Waruru {
         if(waruru.login()==1){
             return;
         }
-        waruru.card();
+        if(waruru.card() != 0){
+            ;
+        }
+        waruru.cash();
     }
 }

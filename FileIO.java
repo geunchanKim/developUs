@@ -1,17 +1,19 @@
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.lang.management.BufferPoolMXBean;
 
-class User{
+class User{ //유저 클래스, 사용자 ID와 PW 전부 저장 및 관리
     private String userId;
     private String userPass;
-    private String path = System.getProperty("user.dir") + "/";
+    private String path = System.getProperty("user.dir") + "/"; //텍스트파일들이 저장되는 위치
 
     public void setId(String inputId){//id설정
         userId = inputId;
@@ -25,23 +27,25 @@ class User{
     public String getPass(){
         return userPass;
     }
-    public void saveUser() throws IOException{
+    public void saveUser() throws IOException{  //getter로 얻은 ID와 PW를 텍스트파일로 저장
         OutputStream output = new FileOutputStream(path+userId+".txt");
         byte[] by = userPass.getBytes();
         output.write(by);
         output.close();
     }
-    public String loadUser(String searchId){
+    public String loadUser(String searchId){    //저장된 텍스트파일을 불러와 첫번째 줄(PW)을 읽어줌
         String str = null;
         try{
             String filePath = path+searchId+".txt";
+            BufferedReader br = new BufferedReader(new FileReader(filePath));
+            str = br.readLine();
             FileInputStream fileStream = null;
             fileStream = new FileInputStream( filePath );// 파일 스트림 생성
 	        //버퍼 선언
 	        byte[] readBuffer = new byte[fileStream.available()];
-	        while (fileStream.read( readBuffer ) != "\n"){}
-	        str = new String(readBuffer); //출력
-
+	        while (fileStream.read( readBuffer ) != -1){}
+	        //str = new String(readBuffer); //출력
+            br.close();
 	        fileStream.close(); //스트림 닫기
         }
         catch (FileNotFoundException e){
@@ -66,7 +70,7 @@ class FindUser{
             return false;
         }
     }
-    public boolean checkPw(String id, String pw){
+    public boolean checkPw(String id, String pw){   //텍스트파일 첫째줄(pw)을 읽고 입력받은 패스워드가 옳은지 검사함
         User user = new User();
         String str = user.loadUser(id);
         if(str.equals(pw)){
@@ -78,16 +82,16 @@ class FindUser{
     }
 }
 
-class Card{
+class Card{ //카드정보 클래스
     private String cardNum;    //카드번호 16자리
     private String due;        //유효기간 MMYYYY
-    private int birth;      //생년월일 YYMMDD
+    private String birth;      //생년월일 YYMMDD
     private String cvc;        //cvc번호 3자리
     private String code;       //비밀번호 앞 2자리
     private String id;
     private String path = System.getProperty("user.dir")+"/";
 
-    public Card(String id){
+    public Card(String id){ //사용자 아이디 넘겨주기
         this.id = id;
     }
     
@@ -110,12 +114,14 @@ class Card{
         return due; 
     }
 
-    public void setbirth(int yy, int mm, int dd){
-        String cd = Integer.toString(yy)+Integer.toString(mm)+Integer.toString(dd);
-        birth = Integer.parseInt(cd);
+    public void setbirth(String yy, String mm, String dd){
+//       String cd = Integer.toString(yy)+Integer.toString(mm)+Integer.toString(dd);
+//       birth = Integer.parseInt(cd);
+        String cd = yy + mm + dd;
+        birth = cd;
     }
 
-    public int getbirth(){
+    public String getbirth(){
         return birth;
     }
 
@@ -135,7 +141,7 @@ class Card{
         return code;
     }
 
-    public void saveCard(Card card){
+    public void saveCard(Card card){    //getter로 얻은 카드정보를 텍스트 파일에 추가함. 카드정보는 사용자의 텍스트파일에 비밀번호 밑줄부터 저장됨
         try {
             File file = new File(path+id+".txt");
             BufferedWriter bw = new BufferedWriter(new FileWriter(file, true));
@@ -150,8 +156,19 @@ class Card{
         }
     }
 
-    public boolean checkCard(Card card){
-        return false;
+    public boolean checkCard(Card card) throws IOException{    //저장된 사용자 텍스트파일을 읽어 사용자의 카드정보가 추가되었는지 확인함
+        File file = new File(path+id+".txt");
+        String str = null;
+            BufferedReader br = new BufferedReader(new FileReader(file));
+                str = br.readLine();
+                str = br.readLine();                
+                br.close();
+                if(str==null){
+                    return false;
+                }
+                else{
+                    return true;
+                }
 
     }
 
