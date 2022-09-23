@@ -1,0 +1,73 @@
+* {
+    /* background-color: white; */
+    list-style: none;
+    text-decoration-line: none;
+}
+
+.section .logo {
+    /* 로고 */
+    position: absolute;
+    width: 120px;
+    height: 42px;
+    left: 50px;
+    top: 19px;
+
+    font-family: 'KoreanTIMSR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: black;
+}
+
+.section .sign-in{
+    /* 로그인 */
+    position: absolute;
+    width: 75px;
+    height: 25px;
+    left: 1217px;
+    top: 27px;
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #000000;
+}
+
+.section .green-box{
+    /* 회원가입 박스 */
+    position: absolute;
+    width: 87px;
+    height: 34px;
+    left: 1303px;
+    top: 23px;
+
+    background: #8ADEB6;
+    border-radius: 16px;
+}
+
+.green-box .sign-up{
+    /* 회원가입 */
+    position: relative;
+    left: 7px;
+    top: 3px;
+    width: 67px;
+    height: 25px;
+    /* left: 1313px; */
+    /* top: 28px; */
+    
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: white;
+}
+
+
+
