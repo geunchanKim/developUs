@@ -4,26 +4,22 @@ import java.time.LocalTime;
 
 public class Tack_trash {
   private int planned_time_sec = 0;//도착 예정 시간, 초단위
-  private int end_time = 0;//실제 도착 시간
+  public Collecter collecter;
   private int time_sec = 0;//현재 시간, 초단위
   private int start_time = 0; //신청시간
   private int left_time_sec = 0;//남은 시간, 초단위
-  private int trash_weit_gram = 0;//쓰레기 무게g단위
+  private String path = System.getProperty("user.dir") + "/";
+  private int log_num = 0;
+
+
   public LocalDateTime now = LocalDateTime.now(); 
 
   Tack_trash(int hour,int min,int sec) {
     setPlanndTime(hour, min, sec);//도착 예정 시간 세팅
     setTimeSec();//현재시간 세팅
+    //collecter = new Collecter();//콜렉터 접근
     start_time = time_sec;//start시간 저장
     setLeftTime();//남은시간 만들기
-  }
-
-  public void setEndTime(int num) {
-    end_time = num;
-  }
-
-  public int getEndTime() {
-    return end_time;
   }
 
   public int getStartTime() {
@@ -39,14 +35,7 @@ public class Tack_trash {
     time_sec = second;    
   }
   
-  public void setTrashweit(int num) {//쓰레기 무게 세팅
-    trash_weit_gram = num;
-  }
-
-  public int getTrashweit() {//쓰레기 무게 조회
-    return trash_weit_gram;
-  }
-
+ 
   public void setPlanndTime(int hour,int min,int sec) {//시간, 분, 초로 넣으면 자동으로 초로 변환 도착 예정시간 세팅
     planned_time_sec = (hour * 3600) + (min * 60) + (sec);
   }
@@ -64,7 +53,7 @@ public class Tack_trash {
   
   public int change_cash() {//가중치 변환
     int weighting;
-    weighting = trash_weit_gram / 500 + 1;
+    weighting = collecter.getTrashweit() / 500 + 1;
     
     if (weighting>10){
       weighting = 10;
@@ -72,5 +61,6 @@ public class Tack_trash {
     return weighting;
   }
 
+ 
 
 }
