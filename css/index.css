@@ -1,10 +1,21 @@
 * {
-    /* background-color: white; */
     list-style: none;
     text-decoration-line: none;
 }
 
-.section .logo {
+.section1{
+    width: 100%;
+}
+
+.section2{
+    width: 100%;
+}
+
+.section3{
+    width: 100%;
+}
+
+.section1 .logo {
     /* 로고 */
     position: absolute;
     width: 120px;
@@ -21,7 +32,7 @@
     color: black;
 }
 
-.section .sign-in{
+.section1 .sign-in{
     /* 로그인 */
     position: absolute;
     width: 75px;
@@ -38,7 +49,7 @@
     color: #000000;
 }
 
-.section .green-box{
+.section1 .green-box{
     /* 회원가입 박스 */
     position: absolute;
     width: 87px;
@@ -69,5 +80,114 @@
     color: white;
 }
 
+.section2 .line1{
+    /* 와르르와 함께 */
+
+position: absolute;
+width: 350px;
+height: 65px;
+left: 101px;
+top: 201px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 42px;
+line-height: 65px;
+
+color: #000000;
+
+}
+
+.section2 .line2{
+    /* 쓰레기 없는 삶을 경험하세요 */
 
 
+position: absolute;
+width: 700px;
+height: 65px;
+left: 101px;
+top: 266px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 42px;
+line-height: 65px;
+
+color: #000000;
+}
+
+.section2 .line3{
+    /* 맞춤형 쓰레기 수거 서비스 */
+
+    position: absolute;
+width: 1050px;
+height: 87px;
+left: 101px;
+top: 331px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 58px;
+line-height: 87px;
+
+color: #000000;
+}
+
+.section2 .line4{
+    /* 와르르 */
+
+    position: absolute;
+width: 1050px;
+height: 87px;
+left: 830px;
+top: 331px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 58px;
+line-height: 87px;
+
+color: #8ADEB6;
+}
+
+.section2 .white-box{
+    /* 수거하기 박스 */
+    position: absolute;
+width: 170px;
+height: 60px;
+left: 101px;
+top: 500px;
+
+background: #FFFFFF;
+box-shadow: 0px 0px 29px -7px rgba(0, 0, 0, 0.27);
+border-radius: 34px;
+}
+
+.section2 .pick-up{
+    /* 수거하기 */
+position: relative;
+width: 128px;
+height: 30px;
+left: 15px;
+top: 15px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 30px;
+
+color: #000000;
+}
+
+.section3 .trash{
+    position: absolute;
+width: 1229px;
+height: 824px;
+left: 200px;
+top: 300px;
+}
