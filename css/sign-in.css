@@ -1,0 +1,77 @@
+* {
+    text-decoration-line: none;
+}
+
+.section1{
+    width:100%;
+    text-align: center;
+}
+
+.section1 .logo {
+    /* 로고 */
+position: absolute;
+width: 176px;
+height: 70px;
+left: 632px;
+top: 226px;
+
+font-family: 'KoreanTIMSR';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+text-align: center;
+line-height: 70px;
+
+color: #000000;
+}
+
+.profile{
+    width: 100%;
+}
+
+.profile .id{
+    /* id 입력 */
+    position: absolute;
+width: 600px;
+height: 80px;
+left: 420px;
+top: 367px;
+
+background: #E8E8E8;
+border-radius: 20px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 450;
+font-size: 26px;
+line-height: 10px;
+}
+
+.profile .pwd{
+    /* pwd 입력 */
+    position: absolute;
+width: 600px;
+height: 80px;
+left: 420px;
+top: 472px;
+
+background: #E8E8E8;
+border-radius: 20px;
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 450;
+font-size: 26px;
+line-height: 8px;
+
+}
+
+input::placeholder {
+    font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 450;
+font-size: 26px;
+line-height: 8px;
+left:20px;
+color: #878787;
+    opacity: 1; /* 파이어폭스에서 뿌옇게 나오는 현상을 방지하기 위한 css */
+  }
