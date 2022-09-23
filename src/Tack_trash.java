@@ -2,19 +2,33 @@ import java.lang.reflect.Method;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
-public class tack_trash {
+public class Tack_trash {
   private int planned_time_sec = 0;//도착 예정 시간, 초단위
-  private int time_sec = 0;//현재 시간, 초단위 
+  private int end_time = 0;//실제 도착 시간
+  private int time_sec = 0;//현재 시간, 초단위
+  private int start_time = 0; //신청시간
   private int left_time_sec = 0;//남은 시간, 초단위
   private int trash_weit_gram = 0;//쓰레기 무게g단위
   public LocalDateTime now = LocalDateTime.now(); 
 
-  tack_trash(int hour,int min,int sec) {
-    setPlanndTime(hour, min, sec);//도착시간 세팅
+  Tack_trash(int hour,int min,int sec) {
+    setPlanndTime(hour, min, sec);//도착 예정 시간 세팅
     setTimeSec();//현재시간 세팅
+    start_time = time_sec;//start시간 저장
     setLeftTime();//남은시간 만들기
   }
 
+  public void setEndTime(int num) {
+    end_time = num;
+  }
+
+  public int getEndTime() {
+    return end_time;
+  }
+
+  public int getStartTime() {
+    return start_time;
+  }
   public void setTimeSec() {//현재시간 초로 변환해서 구하기
     int hour = now.getHour();
     int minute = now.getMinute();
