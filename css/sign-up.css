@@ -1,0 +1,277 @@
+
+.section1{
+    width:100%;
+    text-align: center;
+}
+
+.section1 .logo {
+    /* 로고 */
+position: absolute;
+width: 176px;
+height: 70px;
+left: 700px;
+top: 100px;
+
+font-family: 'KoreanTIMSR';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+text-align: center;
+line-height: 70px;
+text-decoration-line: none;
+
+color: #000000;
+}
+
+.profile{
+    position: absolute;
+    width: 100%;
+    left: 80px;
+}
+
+.profile .pid{
+    /* 아이디 */
+position: absolute;
+width: 80px;
+height: 33px;
+left: 344px;
+top: 260px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 33px;
+
+
+color: #878787;
+
+}
+.profile .id{
+    /* id 입력 */
+    position: absolute;
+    width: 400px;
+    height: 60px;
+    left: 517px;
+    top: 267px;
+    
+    background: #FFFFFF;
+}
+
+.profile .checkingid{
+    /* 중복확인 */
+    box-sizing: border-box;
+
+position: absolute;
+width: 150px;
+height: 60px;
+left: 946px;
+top: 266px;
+
+background: #FFFFFF;
+border: 1px solid #8ADEB6;
+
+
+    font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 27px;
+
+}
+
+.profile .ppwd{
+    /* 비밀번호 */
+position: absolute;
+width: 100px;
+height: 33px;
+left: 344px;
+top: 345px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 33px;
+
+
+color: #878787;
+
+}
+
+.profile .pwd{
+    /* pwd 입력 */
+    position: absolute;
+    width: 400px;
+    height: 60px;
+    left: 517px;
+    top: 351px;
+    
+    background: #FFFFFF;
+
+}
+
+.profile .pcheckingpwd{
+    /* 비밀번호 확인 */
+
+
+position: absolute;
+width: 170px;
+height: 33px;
+left: 344px;
+top: 425px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 33px;
+
+
+color: #878787;
+}
+
+.profile .checkingpwd{
+    /* 비밀번호 확인 입력 */
+    position: absolute;
+width: 400px;
+height: 60px;
+left: 517px;
+top: 435px;
+
+background: #FFFFFF;
+}
+
+.profile .pname{
+    /* 이름 */
+
+position: absolute;
+width: 70px;
+height: 33px;
+left: 344px;
+top: 513px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 33px;
+
+color: #878787;
+}
+
+.profile .name{
+    /* 이름 입력 */
+    position: absolute;
+width: 400px;
+height: 60px;
+left: 517px;
+top: 519px;
+
+background: #FFFFFF;
+}
+
+.profile .pnumber{
+    /* 휴대폰 */
+position: absolute;
+width: 67px;
+height: 33px;
+left: 344px;
+top: 595px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 33px;
+
+
+
+color: #878787;
+
+}
+
+.profile .number{
+    /* 번호 입력 */
+    position: absolute;
+    width: 400px;
+    height: 60px;
+    left: 517px;
+    top: 603px;
+    
+    background: #FFFFFF;
+}
+
+.profile .pmail{
+    /* 이메일 */
+
+
+position: absolute;
+width: 67px;
+height: 33px;
+left: 344px;
+top: 680px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 33px;
+
+color: #878787;
+}
+
+.profile .mail{
+    /* 메일 입력 */
+    position: absolute;
+    width: 400px;
+    height: 60px;
+    left: 517px;
+    top: 687px;
+    
+    background: #FFFFFF;
+    
+}
+
+input{
+    font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 33px;
+}
+input::placeholder {
+    font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 450;
+font-size: 26px;
+line-height: 8px;
+left:20px;
+color: #878787;
+    opacity: 1; /* 파이어폭스에서 뿌옇게 나오는 현상을 방지하기 위한 css */
+}
+
+.sign-up {
+    /* 회원가입 버튼 */
+    
+position: absolute;
+width: 600px;
+height: 80px;
+left: 500px;
+top: 811px;
+
+background: #8ADEB6;
+border-radius: 20px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 35px;
+
+color: #FFFFFF;
+
+}
+
+
+
