@@ -65,7 +65,10 @@ color: #878787;
   height: 60px;
   /* //left: 501px; */
   top: 295px;
-
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
   background: #FFFFFF;
 }
 
