@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수거정보</title>
+    <link rel="stylesheet" href="./css/pickupinfo.css">
+</head>
+<body>
+    <div class="section1">
+        <a href="main_mypage.html" class="logo">와르르</a>
+    </div>
+    <p class="header">수거 정보를 입력해주세요</p>
+    <input type="text" class="number" placeholder="   전화번호를 입력해주세요">
+    <div class="add">
+        <input type="text" class="address" placeholder="   주소를 설정해주세요">
+        <!-- 버튼 대신 이미지? -->
+    </div>
+    <input type="text" class="date" placeholder="   수거 날짜를 설정해주세요" onfocus="(this.type='date')" value="2022-09-25" min="2022-09-25" max="2023-10-1" onblur="(this.type='text')">
+    <!-- js 로 value,min 당일로 설정 및 7일 후를 max 설정 그리고 placeholder 및 value 이벤트마다 설정-->
+    <input type="text" class="time" placeholder="   수거 시간을 설정해주세요" onfocus="(this.type='time')" value="24:00:00" min="24:00:00" max="00:00:00" onblur="(this.type='text')">
+    <select class="kind" name="쓰레기 종류를 설정해주세요" required autofocus>
+        <option>a</option>
+        <option>b</option>
+        <option>c</option>
+    </select>
+    <button type='button' class="saveinfo" disabled>저장</button>
+</body>
+</html>
