@@ -7,24 +7,49 @@
     <title>수거정보</title>
     <link rel="stylesheet" href="./css/pickupinfo.css">
 </head>
-<body>
+<body style="background: #F5F5F5">
     <div class="section1">
-        <a href="main_mypage.html" class="logo">와르르</a>
+        <a href="#" class="logo">와르르</a>
     </div>
     <p class="header">수거 정보를 입력해주세요</p>
     <input type="text" class="number" placeholder="   전화번호를 입력해주세요">
     <div class="add">
         <input type="text" class="address" placeholder="   주소를 설정해주세요">
+        <a href="ex.html">click me</a>
         <!-- 버튼 대신 이미지? -->
     </div>
-    <input type="text" class="date" placeholder="   수거 날짜를 설정해주세요" onfocus="(this.type='date')" value="2022-09-25" min="2022-09-25" max="2023-10-1" onblur="(this.type='text')">
-    <!-- js 로 value,min 당일로 설정 및 7일 후를 max 설정 그리고 placeholder 및 value 이벤트마다 설정-->
-    <input type="text" class="time" placeholder="   수거 시간을 설정해주세요" onfocus="(this.type='time')" value="24:00:00" min="24:00:00" max="00:00:00" onblur="(this.type='text')">
-    <select class="kind" name="쓰레기 종류를 설정해주세요" required autofocus>
-        <option>a</option>
-        <option>b</option>
-        <option>c</option>
+    <input type="text" class="date" id = "Date" placeholder="   수거 날짜를 설정해주세요" onfocus="(this.type='date')" onblur="(this.type='text')">
+    <input type="text" id="dateTimeLocal" class="time" placeholder="   수거 시간을 설정해주세요" onfocus="(this.type='time')"  min="24:00:00" max="00:00:00" onblur="(this.type='text')">
+    <select class="kind" style="font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: medium;
+    font-size: 24px;
+    color: #878787;
+    line-height: 33px;" required autofocus>
+        <div class = "time">
+        <option selected>-------------쓰레기 종류를 설정해주세요----------------</option>
+        </div>
+        <option>일반 쓰레기</option>
+        <option>음식물 쓰레기</option>
+        <option>재활용</option>
     </select>
     <button type='button' class="saveinfo" disabled>저장</button>
 </body>
 </html>
+<script>
+    var now_utc = new Date() // 지금 날짜를 밀리초로
+    // getTimezoneOffset()은 현재 시간과의 차이를 분 단위로 반환
+    //console.log(now_utc.getDate()); //27
+    var tomorrow_utc = new Date(now_utc.setDate(now_utc.getDate() + 1));
+    var timeOff = tomorrow_utc.getTimezoneOffset()*60000; // 분단위를 밀리초로 변환
+    // new Date(now_utc-timeOff).toISOString()은 '2022-05-11T18:09:38.134Z'를 반환
+    var tomorrow = new Date(tomorrow_utc-timeOff).toISOString().split("T")[0];
+    document.getElementById("Date").setAttribute("min", tomorrow);
+
+    var aweek_utc = new Date(now_utc.setDate(now_utc.getDate() + 7));
+    var timeOff_aweek = aweek_utc.getTimezoneOffset()*60000; // 분단위를 밀리초로 변환
+    // new Date(now_utc-timeOff).toISOString()은 '2022-05-11T18:09:38.134Z'를 반환
+    var aweek = new Date(aweek_utc-timeOff).toISOString().split("T")[0];
+    document.getElementById("Date").setAttribute("max", aweek);
+
+</script>

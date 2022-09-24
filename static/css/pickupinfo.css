@@ -57,7 +57,7 @@ font-family: 'Noto Sans';
 font-style: normal;
 font-weight: 500;
 font-size: 26px;
-line-height: 35px;  
+line-height: 35px;
 
 color: black;
 }
@@ -156,4 +156,11 @@ font-size: 26px;
 line-height: 35px;
 
 color: #FFFFFF;
+}
+.option{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
 }
