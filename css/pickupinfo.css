@@ -1,0 +1,166 @@
+* {
+    text-decoration-line: none;
+}
+
+.section1{
+    width: 100%;
+}
+
+.section1 .logo {
+    /* 로고 */
+    position: absolute;
+    width: 120px;
+    height: 42px;
+    left: 50px;
+    top: 19px;
+
+    font-family: 'KoreanTIMSR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: black;
+}
+
+.header{
+    /* 수거 정보를 입력해주세요 */
+
+
+position: absolute;
+/* width: 426px; */
+height: 54px;
+left: 545px;
+top: 153px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 54px;
+
+color: #000000;
+}
+
+.number{
+    /* 전화번호 입력*/
+    position: absolute;
+width: 600px;
+height: 80px;
+left: 480px;
+top: 300px;
+
+background: #E8E8E8;
+border-radius: 20px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 35px;
+
+color: black;
+}
+
+input::placeholder {
+    font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 450;
+font-size: 26px;
+line-height: 8px;
+left:20px;
+color: #878787;
+    opacity: 1; /* 파이어폭스에서 뿌옇게 나오는 현상을 방지하기 위한 css */
+}
+
+.add .address{
+    /* 주소 */
+    position: absolute;
+width: 600px;
+height: 80px;
+left: 480px;
+top: 420px;
+
+background: #E8E8E8;
+border-radius: 20px;
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 35px;
+}
+
+.date{
+    /* 날짜 */
+position: absolute;
+width: 600px;
+height: 80px;
+left: 480px;
+top: 540px;
+
+background: #E8E8E8;
+border-radius: 20px;
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 35px;
+
+}
+
+.time{
+    /* 시간 */
+    position: absolute;
+width: 600px;
+height: 80px;
+left: 480px;
+top: 660px;
+
+background: #E8E8E8;
+border-radius: 20px;
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 35px;
+
+}
+
+.kind{
+    /* 종류 */
+    position: absolute;
+width: 600px;
+height: 80px;
+left: 480px;
+top: 780px;
+
+background: #E8E8E8;
+border-radius: 20px;
+}
+
+.saveinfo{
+    /* 저장버튼 */
+    position: absolute;
+width: 600px;
+height: 80px;
+left: 480px;
+top: 900px;
+
+background: #8ADEB6;
+border-radius: 20px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 35px;
+
+color: #FFFFFF;
+}
+.option{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+}
