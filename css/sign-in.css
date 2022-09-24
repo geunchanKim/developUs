@@ -1,0 +1,133 @@
+
+.section1{
+    width:100%;
+    text-align: center;
+}
+
+.section1 .logo {
+    /* 로고 */
+position: absolute;
+width: 176px;
+height: 70px;
+left: 700px;
+top: 150px;
+
+font-family: 'KoreanTIMSR';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+text-align: center;
+line-height: 70px;
+text-decoration-line: none;
+
+color: #000000;
+}
+
+.profile{
+    width: 100%;
+}
+
+.profile .id{
+    /* id 입력 */
+    position: absolute;
+width: 600px;
+height: 80px;
+left: 490px;
+top: 367px;
+
+background: #E8E8E8;
+border-radius: 20px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 450;
+font-size: 26px;
+line-height: 10px;
+}
+
+.profile .pwd{
+    /* pwd 입력 */
+    position: absolute;
+width: 600px;
+height: 80px;
+left: 490px;
+top: 472px;
+
+background: #E8E8E8;
+border-radius: 20px;
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 450;
+font-size: 26px;
+line-height: 8px;
+
+}
+
+input::placeholder {
+    font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 450;
+font-size: 26px;
+line-height: 8px;
+left:20px;
+color: #878787;
+    opacity: 1; /* 파이어폭스에서 뿌옇게 나오는 현상을 방지하기 위한 css */
+}
+
+.btn-primary {
+    /* 로그인 버튼 */
+    position: absolute;
+width: 600px;
+height: 80px;
+left: 495px;
+top: 585px;
+
+background: #8ADEB6;
+border-radius: 20px;
+color: white;
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 35px;
+}
+
+.section2 {
+    width: 100%;
+}
+
+.section2 .findingpwd{
+    /* 비밀번호 찾기 */
+    position: absolute;
+width: 200px;
+height: 35px;
+left: 500px;
+top: 683px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 35px;
+text-decoration-line: none;
+
+color: #878787;
+}
+
+.section2 .sign-up{
+    /* 회원가입 */
+    position: absolute;
+width: 151px;
+height: 35px;
+left: 990px;
+top: 683px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 35px;
+
+color: #878787;
+}
+
