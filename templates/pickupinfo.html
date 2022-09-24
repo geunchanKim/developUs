@@ -14,13 +14,14 @@
     <p class="header">수거 정보를 입력해주세요</p>
     <input type="text" class="number" placeholder="   휴대폰 번호를 입력해주세요">
     <div class="add">
-        <input type="text" id="sample4_postcode" class="address" placeholder="우편번호">
+        <input type="text" id="sample4_postcode" class="address" placeholder="   우편번호">
         <input type="button" onclick="sample4_execDaumPostcode()" class="finding" value="우편번호 찾기"><br>
-        <input type="text" id="sample4_roadAddress" class="road" placeholder="도로명주소">
-        <input type="text" id="sample4_jibunAddress" placeholder="지번주소">
+        
+        <input type="text" id="sample4_jibunAddress" placeholder="지번주소" class="urban">
+        <input type="text" id="sample4_roadAddress" class="road" placeholder="   도로명주소">
         <span id="guide" style="color:#999;display:none"></span>
-        <input type="text" id="sample4_detailAddress" class="detailed" placeholder="상세주소">
-        <input type="text" id="sample4_extraAddress" placeholder="참고항목">
+        <input type="text" id="sample4_detailAddress" class="detailed" placeholder="   상세주소">
+        <input type="text" id="sample4_extraAddress" placeholder="참고항목" style="color:#999;display:none">
 
     </div>
     <input type="text" class="date" id = "Date" placeholder="   수거 날짜를 설정해주세요" onfocus="(this.type='date')" onblur="(this.type='text')">
