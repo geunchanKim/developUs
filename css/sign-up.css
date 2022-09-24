@@ -1,4 +1,3 @@
-
 .section1{
     width:100%;
     text-align: center;
@@ -39,7 +38,7 @@ top: 260px;
 
 font-family: 'Noto Sans';
 font-style: normal;
-font-weight: 500;
+font-weight: bold;
 font-size: 24px;
 line-height: 33px;
 
@@ -54,7 +53,7 @@ color: #878787;
     height: 60px;
     left: 517px;
     top: 267px;
-    
+
     background: #FFFFFF;
 }
 
@@ -74,7 +73,7 @@ border: 1px solid #8ADEB6;
 
     font-family: 'Noto Sans';
 font-style: normal;
-font-weight: 500;
+font-weight: bold;
 font-size: 20px;
 line-height: 27px;
 
@@ -90,7 +89,7 @@ top: 345px;
 
 font-family: 'Noto Sans';
 font-style: normal;
-font-weight: 500;
+font-weight: bold;
 font-size: 24px;
 line-height: 33px;
 
@@ -106,7 +105,7 @@ color: #878787;
     height: 60px;
     left: 517px;
     top: 351px;
-    
+
     background: #FFFFFF;
 
 }
@@ -123,7 +122,7 @@ top: 425px;
 
 font-family: 'Noto Sans';
 font-style: normal;
-font-weight: 500;
+font-weight: bold;
 font-size: 24px;
 line-height: 33px;
 
@@ -153,7 +152,7 @@ top: 513px;
 
 font-family: 'Noto Sans';
 font-style: normal;
-font-weight: 500;
+font-weight: bold;
 font-size: 24px;
 line-height: 33px;
 
@@ -181,7 +180,7 @@ top: 595px;
 
 font-family: 'Noto Sans';
 font-style: normal;
-font-weight: 500;
+font-weight: bold;
 font-size: 24px;
 line-height: 33px;
 
@@ -198,7 +197,7 @@ color: #878787;
     height: 60px;
     left: 517px;
     top: 603px;
-    
+
     background: #FFFFFF;
 }
 
@@ -214,7 +213,7 @@ top: 680px;
 
 font-family: 'Noto Sans';
 font-style: normal;
-font-weight: 500;
+font-weight: bold;
 font-size: 24px;
 line-height: 33px;
 
@@ -228,15 +227,15 @@ color: #878787;
     height: 60px;
     left: 517px;
     top: 687px;
-    
+
     background: #FFFFFF;
-    
+
 }
 
 input{
     font-family: 'Noto Sans';
 font-style: normal;
-font-weight: 500;
+font-weight: bold;
 font-size: 24px;
 line-height: 33px;
 }
@@ -253,7 +252,7 @@ color: #878787;
 
 .sign-up {
     /* 회원가입 버튼 */
-    
+
 position: absolute;
 width: 600px;
 height: 80px;
@@ -272,6 +271,3 @@ line-height: 35px;
 color: #FFFFFF;
 
 }
-
-
-
