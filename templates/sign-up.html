@@ -12,29 +12,30 @@
         <a href="/
         " class="logo">와르르</a>
     </div>
-
+    <form method="GET" action="/saving">
     <div class="profile">
         <p class="pid">아이디</p>
-        <input type="text" class="id">
+        <input type="text" class="id" name = "userid">
         <button type='button' class="checkingid" disabled>중복확인</button>
 
         <p class="ppwd">비밀번호</p>
-        <input type="password" class="pwd">
+        <input type="password" class="pwd" name = "userpw">
 
         <p class="pcheckingpwd">비밀번호 확인</p>
-        <input type="password" class="checkingpwd">
+        <input type="password" class="checkingpwd" name = "checkpw">
 
         <p class="pname">이름</p>
-        <input type="text" class="name">
+        <input type="text" class="name" name = "username">
 
-        <p class="pnumber">숫자</p>
-        <input type="text" class="number" placeholder="   숫자만 입력해주세요">
+        <p class="pnumber">전화번호</p>
+        <input type="text" class="number" placeholder="   숫자만 입력해주세요" name = "phonenumber">
 
         <p class="pmail">메일</p>
-        <input type="text" class="mail" placeholder="   예: war@warr.com">
+        <input type="text" class="mail" placeholder="   예: war@warr.com" name = "email">
     </div>
 
-    <button type='button' class="sign-up" disabled>가입하기</button>
+    <button type='submit' class="sign-up">가입하기</button>
+</form>
 
 </body>
 </html>

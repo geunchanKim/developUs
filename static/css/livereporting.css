@@ -14,7 +14,7 @@
 .section3{
   position:absolute;
   left: 60px;
-  top:5px;
+  top:-1px;
     width: 100%;
 }
 .section4{
@@ -55,7 +55,7 @@
     position: absolute;
     /* //width: 706px; */
     height: 87px;
-    left: 390px;
+    left: 400px;
     top: 213px;
 
     font-family: 'Noto Sans';

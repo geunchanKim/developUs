@@ -57,6 +57,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 26px;
 line-height: 35px;
+color: #878787;
 }
 
 input::placeholder {
@@ -75,8 +76,8 @@ color: #878787;
     position: absolute;
     width: 413px;
     height: 80px;
-    left: 420px;
-    top: 257px;
+    left: 480px;
+    top: 330px;
     
     background: #E8E8E8;
     border-radius: 20px;
@@ -85,15 +86,36 @@ font-style: normal;
 font-weight: 500;
 font-size: 26px;
 line-height: 35px;
+color: #878787;
 }
 
-.date{
-    /* 날짜 */
-position: absolute;
+.add .finding{
+    position: absolute;
+width: 167px;
+height: 80px;
+left: 920px;
+top: 330px;
+
+background: #FFFFFF;
+box-shadow: 0px 0px 10px 4px rgba(183, 183, 183, 0.25);
+border-radius: 20px;
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 30px;
+/* identical to box height */
+
+
+color: #696969;
+}
+
+.add .road{
+    position: absolute;
 width: 600px;
 height: 80px;
 left: 480px;
-top: 540px;
+top: 440px;
 
 background: #E8E8E8;
 border-radius: 20px;
@@ -102,7 +124,58 @@ font-style: normal;
 font-weight: 500;
 font-size: 26px;
 line-height: 35px;
+color: #878787;
+}
 
+.add .urban{
+    position: absolute;
+width: 600px;
+height: 80px;
+left: 480px;
+top: 440px;
+
+background: #E8E8E8;
+border-radius: 20px;
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 35px;
+color: #878787;
+}
+
+.add .detailed{
+    position: absolute;
+width: 600px;
+height: 80px;
+left: 480px;
+top: 555px;
+
+background: #E8E8E8;
+border-radius: 20px;
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 35px;
+color: #878787;
+}
+.date{
+    /* 날짜 */
+position: absolute;
+width: 600px;
+height: 80px;
+left: 480px;
+top: 670px;
+
+background: #E8E8E8;
+border-radius: 20px;
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 35px;
+color: #878787;
 }
 
 .time{
@@ -111,7 +184,7 @@ line-height: 35px;
 width: 600px;
 height: 80px;
 left: 480px;
-top: 660px;
+top: 785px;
 
 background: #E8E8E8;
 border-radius: 20px;
@@ -120,7 +193,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 26px;
 line-height: 35px;
-
+color: #878787;
 }
 
 .kind{
@@ -129,7 +202,7 @@ line-height: 35px;
 width: 600px;
 height: 80px;
 left: 480px;
-top: 780px;
+top: 900px;
 
 background: #E8E8E8;
 border-radius: 20px;
@@ -141,7 +214,7 @@ border-radius: 20px;
 width: 600px;
 height: 80px;
 left: 480px;
-top: 900px;
+top: 1050px;
 
 background: #8ADEB6;
 border-radius: 20px;
