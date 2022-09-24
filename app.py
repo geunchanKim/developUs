@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
 
@@ -6,9 +6,17 @@ app = Flask(__name__)
 def waruru():
     return render_template('main.html')
 
-@app.route("/sign-in")
+@app.route("/sign-in", methods=['GET', 'POST'])
 def signin():
-    return render_template('sign-in.html')
+    if request.method == 'GET':
+        userid = request.args.get('userid')
+        passwd = request.args.get('userpw')
+        print(userid)
+        print(passwd)
+        return render_template('sign-in.html')
+        
+    else:
+       return render_template('main_mypage.html')
 
 @app.route("/sign-up")
 def signup():
