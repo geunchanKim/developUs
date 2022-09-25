@@ -27,21 +27,24 @@ _developUs_
 
   - 우편번호 서비스
   <img src="https://img.shields.io/badge/kakao-FFCD00?style=for-the-badge&logo=kakao&logoColor=white">
-  
-  다음 우편번호 서비스를 이용했다.
-  https://postcode.map.daum.net/guide
-     
    <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
    <img src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
    <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white">
      
-   htm, css, js를 활용해서 서버 이용자의 주소 정보를 입력 받고 그 칸을 디자인했다. 
+   다음 우편번호 서비스를 이용했다. https://postcode.map.daum.net/guide 사이트와 html, css, js를 활용해서 서버 이용자의 주소 정보를 입력 받고 그 칸을 디자인했다. 
           
-   - Web Framework
+          
+   - 로그인 및 회원가입 서비스
    
      <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=Flask&logoColor=white">
+     <img src="https://th.bing.com/th/id/R.28cadbd02699c25a88e5c78d73c7babc?rik=3N7u%2fRkVlcrK1A&riu=http%3a%2f%2f0to100academy.com%2fwp-content%2fuploads%2f2020%2f05%2fmain-qimg-28cadbd02699c25a88e5c78d73c7babc-1.png&ehk=FVjQesRunpFkQJXZHTlpPpDCloZohej54AXur02aibg%3d&risl=&pid=ImgRaw&r=0">
      
-
+     
+   - 마이페이지 서비스
+     
+     <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=Flask&logoColor=white">
+   <img src="https://th.bing.com/th/id/R.28cadbd02699c25a88e5c78d73c7babc?rik=3N7u%2fRkVlcrK1A&riu=http%3a%2f%2f0to100academy.com%2fwp-content%2fuploads%2f2020%2f05%2fmain-qimg-28cadbd02699c25a88e5c78d73c7babc-1.png&ehk=FVjQesRunpFkQJXZHTlpPpDCloZohej54AXur02aibg%3d&risl=&pid=ImgRaw&r=0">
+     
 
       
     
