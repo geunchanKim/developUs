@@ -8,7 +8,7 @@ class Collecter:
 
   def __init__(self,id,pw,trash_weit):
     print("#"*10+"Collecter"+"#"*10)
-    self.trash_weit_gram = 0#쓰레기 무게 G단위
+    self.trash_weit_gram = trash_weit#쓰레기 무게 G단위
     self.end_time=0#실제 도착 시간
     self.path = os.getcwd()+"/"
     self.now=datetime.now()
