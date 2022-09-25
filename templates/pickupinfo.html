@@ -1,3 +1,10 @@
+{% with messages = get_flashed_messages()%}
+  {%if messages %}
+    <script type="text/javascript">
+      alert("{{messages[-1]}}");
+    </script>
+    {%endif%}
+  {%endwith%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,21 +16,22 @@
 </head>
 <body style="background: #F5F5F5">
     <div class="section1">
-        <a href="#" class="logo">와르르</a>
+        <a href="/main_mypage" class="logo">와르르</a>
     </div>
     <p class="header">수거 정보를 입력해주세요</p>
-    <input type="text" class="number" placeholder="   휴대폰 번호를 입력해주세요">
+    <form method="GET" action="/savingpickupinfo">
+    <input type="text" class="number" placeholder="   휴대폰 번호를 입력해주세요" name="phonenumber">
     <div class="add">
-        <input type="text" id="sample4_postcode" class="address" placeholder="   우편번호">
+        <input type="text" id="sample4_postcode" class="address" placeholder="   우편번호" name="postalcode">
         <input type="button" onclick="sample4_execDaumPostcode()" class="finding" value="우편번호 찾기"><br>
         <input type="text" id="sample4_jibunAddress" class="urban" placeholder="지번주소">
-        <input type="text" id="sample4_roadAddress" class="road" placeholder="   도로명주소">
+        <input type="text" id="sample4_roadAddress" class="road" placeholder="   도로명주소" name="address">
         <span id="guide" style="color:#999;display:none"></span>
         <input type="text" id="sample4_extraAddress" class="detailed" placeholder="참고항목">
-        <input type="text" id="sample4_detailAddress" class="detailed" placeholder="   상세주소">
+        <input type="text" id="sample4_detailAddress" class="detailed" placeholder="   상세주소" name="detailedaddress">
     </div>
-    <input type="text" class="date" id = "Date" placeholder="   수거 날짜를 설정해주세요" onfocus="(this.type='date')" onblur="(this.type='text')">
-    <input type="text" id="dateTimeLocal" class="time" placeholder="   수거 시간을 설정해주세요" onfocus="(this.type='time')"  min="24:00:00" max="00:00:00" onblur="(this.type='text')">
+    <input type="text" class="date" id = "Date" placeholder="   수거 날짜를 설정해주세요" name="date" onfocus="(this.type='date')" onblur="(this.type='text')">
+    <input type="text" id="dateTimeLocal" class="time" placeholder="   수거 시간을 설정해주세요" name="time" onfocus="(this.type='time')"  min="24:00:00" max="00:00:00" onblur="(this.type='text')">
     <select class="kind" style="font-family: 'Noto Sans';
     font-style: normal;
     font-weight: medium;
@@ -37,7 +45,8 @@
         <option>음식물 쓰레기</option>
         <option>재활용</option>
     </select>
-    <button type='button' class="saveinfo" disabled>저장</button>
+    <button type='submit' class="saveinfo">저장</button>
+</form>
 </body>
 </html>
 

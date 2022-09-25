@@ -1,3 +1,10 @@
+{% with messages = get_flashed_messages()%}
+  {%if messages %}
+    <script type="text/javascript">
+      alert("{{messages[-1]}}");
+    </script>
+    {%endif%}
+  {%endwith%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +17,7 @@
 <body>
 
     <div class="section1">
-        <a href="#" class="logo">와르르</a>
+        <a href="main_mypage" class="logo">와르르</a>
 
         <div class="green-box" onclick="location.href=''">
             <a href="mypage" class="mypage">마이페이지</a>
@@ -23,7 +30,7 @@
         <p class="line3">맞춤형 쓰레기 수거 서비스,</p>
         <p class="line4">와르르</p>
         <div class="white-box" onclick="location.href=''">
-            <a href="pickupinfo.html" class="pick-up">지금 수거하기</a>
+            <a href="/pickupinfo" class="pick-up">지금 수거하기</a>
         </div> 
     </div>
 
