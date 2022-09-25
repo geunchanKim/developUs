@@ -37,13 +37,13 @@ _developUs_
    - 로그인 및 회원가입 서비스
    
      <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=Flask&logoColor=white">
-     <img src="https://th.bing.com/th/id/R.28cadbd02699c25a88e5c78d73c7babc?rik=3N7u%2fRkVlcrK1A&riu=http%3a%2f%2f0to100academy.com%2fwp-content%2fuploads%2f2020%2f05%2fmain-qimg-28cadbd02699c25a88e5c78d73c7babc-1.png&ehk=FVjQesRunpFkQJXZHTlpPpDCloZohej54AXur02aibg%3d&risl=&pid=ImgRaw&r=0">
-     
+    <img src="https://img.shields.io/badge/python-3-red">
      
    - 마이페이지 서비스
      
      <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=Flask&logoColor=white">
-   <img src="https://th.bing.com/th/id/R.28cadbd02699c25a88e5c78d73c7babc?rik=3N7u%2fRkVlcrK1A&riu=http%3a%2f%2f0to100academy.com%2fwp-content%2fuploads%2f2020%2f05%2fmain-qimg-28cadbd02699c25a88e5c78d73c7babc-1.png&ehk=FVjQesRunpFkQJXZHTlpPpDCloZohej54AXur02aibg%3d&risl=&pid=ImgRaw&r=0">
+<img src="https://img.shields.io/badge/python-3-red">
+
      
 
       
