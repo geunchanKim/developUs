@@ -37,17 +37,33 @@ _developUs_
    - 로그인 및 회원가입 서비스
    
      <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=Flask&logoColor=white">
-    <img src="https://img.shields.io/badge/python-3-red">
+    
+      
+      mainClass : 유저 관리 클래스들의 모음
+    
+      User
+        - 유저 정보 저장(saveUser) 및 비밀번호 받아오는(loadUser) 기능을 가진다.
+    
+      FindUser
+        - 아이디 중복,존재 확인(fusearchId,searchId), pw가 맞는지 체크(checkPw)하는 기능을 가진다.
      
+      위와 같은 클래스와 flask 및 파이썬을 활용해서 유저 로그인 및 회원가입 서비스를 구현했다.
+      
+      
    - 마이페이지 서비스
      
      <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=Flask&logoColor=white">
-<img src="https://img.shields.io/badge/python-3-red">
-
-     
-
       
-    
+      
+      Cash : 전체 부분을 총괄하는 클래스
+          - 신청 정보 저장(saveFile), 신청 정보 불러오기(callFile), 가격 책정(paySelection)의 기능을 가진다.
+      
+      Collecter : 관리자, 쓰레기 수거 정보 입력
+          - 관리자의 역할(유저 열람(searchUserFile) 등), 실제 도착 시간(setTimeSec)을 지정하는 기능을 가진다.
+
+     위와 같은 클래스와 flask 및 파이썬을 활용하여 마이페이지 서비스르 만들다.
+     마이페이지는 이용자가 어떤 쓰레기를 신청했는지, 가격은 얼마 나왔는지 등을 보여주는 페이지이다. 
+
      
      
 ### 시연 영상
