@@ -1,0 +1,54 @@
+{% with messages = get_flashed_messages()%}
+  {%if messages %}
+    <script type="text/javascript">
+      alert("{{messages[-1]}}");
+    </script>
+    {%endif%}
+  {%endwith%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결제정보</title>
+    <link rel="stylesheet" href="../static/css/paymentinfo.css">
+</head>
+<body>
+    <div class="section0">
+        <a href="main.html" class="logo">와르르</a>
+    </div>
+    <div class="section1">
+        <div class="pay_title">결제 정보를 입력해주세요</div>
+    </div>
+    <form method="GET" action="/paymentsaving">
+    <div class="payment">
+      <div class ="cardnum_txt" style="top: 309px">카드번호</div>
+        <input type="number" class="cardnum" style="left: 501px" name="num1">
+        <input type="number" class="cardnum" style="left: 647px" name="num2">
+        <input type="number" class="cardnum" style="left: 793px" name="num3">
+        <input type="number" class="cardnum" style="left: 939px" name="num4">
+
+        <div class ="cardnum_txt" style="top: 424px">유효기간</div>
+        <input type="number" class="cardnum" style="top: 410px; left: 501px" name="month">
+        <div class ="cardnum_txt" style="top: 424px; left: 647px" >월</div>
+        <input type="number" class="cardnum" style="top: 410px; left: 708px" name="year">
+        <div class ="cardnum_txt" style="top: 424px; left: 854px" >년</div>
+
+        <div class ="cardnum_txt" style="top: 538px">생년월일</div>
+        <input type="number" class="cardnum" placeholder="YYMMDD" style="top: 524px; left: 501px">
+
+        <div class ="cardnum_txt" style="top: 538px; left: 761px">CVC번호</div>
+        <input type="number" class="cardnum" style="top: 524px; left: 889px" name="cvc">
+
+        <div class ="cardnum_txt" style="top: 653px">비밀번호</div>
+        <input type="number" class="cardnum" style="top: 639px; left: 501px" name="code">
+
+    </div>
+
+    <button type='submit' id="loginBtn" class="btn-pay">결제하기</button>
+</form>
+    <!-- https://velog.io/@pingu944/%EB%A1%9C%EA%B7%B8%EC%9D%B8-%ED%8E%98%EC%9D%B4%EC%A7%80%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B2%84%EB%A0%B8%EB%8B%A4 -->
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+{% with messages = get_flashed_messages()%}
+  {%if messages %}
+    <script type="text/javascript">
+      alert("{{messages[-1]}}");
+    </script>
+    {%endif%}
+  {%endwith%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+<body style = "background: #F5F5F5">
+
+    <div class="section1">
+        <a href="" class ="logo">와르르</a>
+        <a href="sign-in" class="sign-in">로그인</a>
+        <div class="green-box" onclick="location.href=''">
+            <a href="sign-up" class="sign-up">회원가입</a>
+        </div> 
+    </div>
+
+    <div class="section2">
+        <p class="line1"style ="font-weight: bold">와르르와 함께</p>
+        <p class="line2" style ="font-weight: bold">쓰레기 없는 삶을 경험하세요</p>
+        <p class="line3">맞춤형 쓰레기 수거 서비스,</p>
+        <p class="line4">와르르</p>
+        <div class="white-box" onclick="location.href=''">
+            <a href="sign-in" class="pick-up">지금 수거하기</a>
+        </div> 
+    </div>
+
+    <div class="section3">
+        <img src="../static/img/trash.png" class="trash">
+    </div>
+</body>
+</html>

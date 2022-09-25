@@ -1,0 +1,236 @@
+* {
+    text-decoration-line: none;
+}
+
+.section1{
+    width: 100%;
+}
+
+.section1 .logo {
+    /* 로고 */
+    position: absolute;
+    width: 120px;
+    height: 42px;
+    left: 50px;
+    top: 19px;
+
+    font-family: 'KoreanTIMSR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: black;
+}
+
+.header{
+    /* 수거 정보를 입력해주세요 */
+
+
+    position: absolute;
+    width: 650px;
+    height: 54px;
+    left: 550px;
+    top: 73px;
+    
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+    
+    color: #000000;
+}
+
+.number{
+    /* 전화번호 입력*/
+    position: absolute;
+width: 600px;
+height: 80px;
+left: 480px;
+top: 220px;
+
+background: #E8E8E8;
+border-radius: 20px;
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 35px;
+color: #878787;
+}
+
+input::placeholder {
+    font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 450;
+font-size: 26px;
+line-height: 8px;
+left:20px;
+color: #878787;
+    opacity: 1; /* 파이어폭스에서 뿌옇게 나오는 현상을 방지하기 위한 css */
+}
+
+.add .address{
+    /* 주소 */
+    position: absolute;
+    width: 413px;
+    height: 80px;
+    left: 480px;
+    top: 330px;
+    
+    background: #E8E8E8;
+    border-radius: 20px;
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 35px;
+color: #878787;
+}
+
+.add .finding{
+    position: absolute;
+width: 167px;
+height: 80px;
+left: 920px;
+top: 330px;
+
+background: #FFFFFF;
+box-shadow: 0px 0px 10px 4px rgba(183, 183, 183, 0.25);
+border-radius: 20px;
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 30px;
+/* identical to box height */
+
+
+color: #696969;
+}
+
+.add .road{
+    position: absolute;
+width: 600px;
+height: 80px;
+left: 480px;
+top: 440px;
+
+background: #E8E8E8;
+border-radius: 20px;
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 35px;
+color: #878787;
+}
+
+.add .urban{
+    position: absolute;
+width: 600px;
+height: 80px;
+left: 480px;
+top: 440px;
+
+background: #E8E8E8;
+border-radius: 20px;
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 35px;
+color: #878787;
+}
+
+.add .detailed{
+    position: absolute;
+width: 600px;
+height: 80px;
+left: 480px;
+top: 555px;
+
+background: #E8E8E8;
+border-radius: 20px;
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 35px;
+color: #878787;
+}
+.date{
+    /* 날짜 */
+position: absolute;
+width: 600px;
+height: 80px;
+left: 480px;
+top: 670px;
+
+background: #E8E8E8;
+border-radius: 20px;
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 35px;
+color: #878787;
+}
+
+.time{
+    /* 시간 */
+    position: absolute;
+width: 600px;
+height: 80px;
+left: 480px;
+top: 785px;
+
+background: #E8E8E8;
+border-radius: 20px;
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 35px;
+color: #878787;
+}
+
+.kind{
+    /* 종류 */
+    position: absolute;
+width: 600px;
+height: 80px;
+left: 480px;
+top: 900px;
+
+background: #E8E8E8;
+border-radius: 20px;
+}
+
+.saveinfo{
+    /* 저장버튼 */
+    position: absolute;
+width: 600px;
+height: 80px;
+left: 480px;
+top: 1050px;
+
+background: #8ADEB6;
+border-radius: 20px;
+
+font-family: 'Noto Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 35px;
+
+color: #FFFFFF;
+}
+.option{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+}
