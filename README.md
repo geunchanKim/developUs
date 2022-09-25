@@ -1,6 +1,7 @@
 # developUs
 ---
 ## 대구시민을 위한 쓰레기 수거 서비스
+![Desktop - 3](https://user-images.githubusercontent.com/81808787/192131075-4b080f3c-7acd-49af-99c5-0b1e0e9bf623.png)
 
 ### 팀명
 _developUs_
