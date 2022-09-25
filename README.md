@@ -37,7 +37,8 @@ _developUs_
    - API
 
      <img src="https://img.shields.io/badge/kakao-FFCD00?style=for-the-badge&logo=kakao&logoColor=white">
-     카카오의 주소 API를 활용하였다.
+      다음 우편번호 서비스를 이용했다. 
+      https://postcode.map.daum.net/guide
      
      
 ### 시연 영상
